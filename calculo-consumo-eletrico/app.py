@@ -1,23 +1,25 @@
 """
-Programa: Calculadora Inteligentede Consumo de Energia Elétrica
-Descrição: Calcula o consumo mensal (kWh) de um aparelho com base
-na potência (W) e no tempo médio de uso diário (horas).
-Autor: Wagner Oliveira
-Data: 21-03-2026
+Programa: Calculadora de Consumo e Custo de Energia Elétrica
+Descrição: Calcula o consumo mensal (kWh) e o Custo Mensal em reais de um aparelho com base na potência (W), o tempo médio de uso diário (horas) e preço do KWh em reais. 
+Autor: Seu Nome
+Data: 2026
 """
 
 # =========================
-# Entrada de dados 
+# Entrada de dados do usuário
 # =========================
 
-# Solicita aparelho
+# Solicita o nome do aparelho
 aparelho = input("Digite o nome do aparelho: ")
 
-# Solicita a potência em watts e converte para número decimal
+# Solicita a potência em watts e converte para número decimal (float)
 potencia = float(input("Digite a potência do aparelho (em watts): "))
 
 # Solicita o tempo de uso diário em horas e converte para float
 horas_dia = float(input("Digite o tempo médio de uso diário (em horas): "))
+
+# Solicita o preço do kwh e converte para float
+preco_kWh = float(input("Digite o preço do kwh (R$) : "))
 
 
 # =========================
@@ -25,10 +27,13 @@ horas_dia = float(input("Digite o tempo médio de uso diário (em horas): "))
 # =========================
 
 # Fórmula do consumo mensal:
-# (potência (watts) * horas por dia * dias por mês) / 1000
+# (potência em watts * horas por dia * dias do mês) / 1000
 # O resultado é convertido de Wh para kWh
-consumo_mensal = (potencia * horas_dia * 30) / 1000
+consumo_mensal = (potencia * horas_dia * 30) / 1000 
 
+# Fórmula do custo mensal :
+# (Consumo mensal em kwh * preço do kwh)
+custo_mensal = (consumo_mensal * preco_kWh)  
 
 # =========================
 # Saída de dados (resultado)
@@ -42,3 +47,6 @@ print(f"Aparelho: {aparelho}")
 
 # Mostra o consumo com duas casas decimais
 print(f"Consumo estimado: {consumo_mensal:.2f} kWh/mês")
+
+# Mostra o custo mensal em reais com duas casas decimais
+print(f"Custo mensal estimado: R$ {custo_mensal:.2f}")
