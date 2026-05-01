@@ -113,6 +113,6 @@ Este projeto foi desenvolvido para praticar:
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Wagner Oliveira
 
 Projeto desenvolvido para fins educacionais.
