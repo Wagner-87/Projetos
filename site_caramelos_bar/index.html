@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Caramelo's Bar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- W3.CSS -->
+<link rel="stylesheet"
+href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body,h1,h2,h3,h4,h5,h6{
+font-family: "Montserrat", sans-serif;
+}
+
+body{
+background: linear-gradient(
+to right,
+#2B170B 0%,
+#5A3416 35%,
+#B67A1D 70%,
+#E0B04A 100%
+);
+margin:0;
+font-size:18px;
+font-weight:600;
+color:#fff8e7;
+}
+
+.w3-sidebar{
+width:120px;
+background:#684613;
+color:#fdc36c;
+}
+
+.w3-sidebar p{
+    font-size:12px;
+    font-weight:bold;
+    margin-top:5px;
+}
+
+#main{
+margin-left:120px;
+}
+
+.w3-text-caramelo{
+color:#fdc36c;
+}
+
+.banner{
+width:40%;
+border-radius:15px;
+transition:0.3s;
+}
+
+.section-title{
+margin-top:40px;
+}
+
+.card-faq{
+background:#b47b2a;
+padding:20px;
+border-left:10px solid #5A3416;
+border-radius:10px;
+margin-bottom:20px;
+transition:0.3s;
+}
+
+.card-faq:hover{
+transform:scale(1.02);
+background:#8a5a21;
+}
+
+.parceiro-img{
+border-radius:15px;
+transition:0.3s;
+}
+
+.parceiro-img:hover{
+opacity:0.8;
+transform:scale(1.03);
+}
+
+footer{
+background:#b47b2a;
+padding:40px;
+margin-top:50px;
+}
+
+.social-icons i{
+margin:10px;
+transition:0.3s;
+}
+
+.social-icons i:hover{
+color:#5A3416;
+transform:scale(1.2);
+}
+
+.logo-sidebar{
+width: 100px;
+height:auto;
+padding:10px;
+display:block;
+margin:auto;
+}
+
+.nav-mobile{
+display:none;
+}
+
+@media only screen and (max-width:600px){
+
+#main{
+margin-left:0;
+}
+
+.w3-sidebar{
+display:none;
+}
+
+.nav-mobile{
+display:block;
+}
+
+.banner{
+width: 100%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
+
+<img src="imagens/caramelo.png"
+class="logo-sidebar">
+
+<a href="#home"
+class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+
+<i class="fa fa-home w3-xxlarge"></i>
+
+<p>HOME</p>
+
+</a>
+
+<a href="#parceiros"
+class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+
+<i class="fa fa-users w3-xxlarge"></i>
+
+<p>PARCEIROS</p>
+
+</a>
+
+<a href="#faq"
+class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+
+<i class="fa fa-question-circle w3-xxlarge"></i>
+
+<p>FAQ</p>
+
+</a>
+
+<a href="#contato"
+class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+
+<i class="fa fa-envelope w3-xxlarge"></i>
+
+<p>CONTATO</p>
+
+</a>
+
+</nav>
+
+<!-- NAVBAR MOBILE -->
+
+<div class="nav-mobile w3-top w3-hide-large w3-hide-medium">
+
+<nav class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+
+<a href="#home"
+class="w3-bar-item w3-button"
+style="width:25%">
+
+HOME
+
+</a>
+
+<a href="#parceiros"
+class="w3-bar-item w3-button"
+style="width:25%">
+
+PARCEIROS
+
+</a>
+
+<a href="#faq"
+class="w3-bar-item w3-button"
+style="width:25%">
+
+FAQ
+
+</a>
+
+<a href="#contato"
+class="w3-bar-item w3-button"
+style="width:25%">
+
+CONTATO
+
+</a>
+
+</nav>
+
+</div>
+
+<!-- CONTEÚDO PRINCIPAL -->
+
+<div class="w3-padding-large" id="main">
+
+<!-- HOME -->
+
+<header class="w3-container w3-padding-32 w3-center" id="home">
+
+<h1 class="w3-jumbo">
+
+<span class="w3-text-caramelo">
+Caramelo's Bar
+</span>
+
+</h1>
+
+<h3>
+"O clássico nunca sai de moda."
+</h3>
+
+<p>
+Vira-Lata Style • Desde 2023
+</p>
+
+<img src="imagens/caramelo.png"
+alt="Banner do Bar"
+class="w3-image banner">
+
+</header>
+
+<!-- SOBRE -->
+
+<div class="w3-content w3-justify w3-padding-64">
+
+<h2 class="w3-text-caramelo section-title">
+Nossa História
+</h2>
+
+<hr style="width:200px">
+
+<p>
+
+O Caramelo’s Bar nasceu da união entre nostalgia,
+música clássica e o espírito acolhedor do vira-lata
+caramelo brasileiro.
+
+Inspirado na estética retrô premium dos anos 70, 80 e 90,
+o ambiente oferece conforto acústico, gastronomia afetiva
+e experiências memoráveis para quem valoriza boa música,
+boa conversa e momentos especiais.
+
+</p>
+
+<h2 class="w3-text-caramelo section-title">
+Missão
+</h2>
+
+<hr style="width:200px">
+
+<p>
+
+Proporcionar experiências nostálgicas e acolhedoras
+através de música de qualidade, gastronomia afetiva,
+responsabilidade social e conforto premium.
+
+</p>
+
+<h2 class="w3-text-caramelo section-title">
+Valores
+</h2>
+
+<hr style="width:200px">
+
+<ul>
+
+<li>🐾 Lealdade e acolhimento</li>
+
+<li>🎵 Valorização da música clássica e músicos locais</li>
+
+<li>🍺 Excelência em gastronomia e atendimento</li>
+
+<li>🐶 Apoio à causa animal</li>
+
+<li>🎚️ Conforto acústico e experiência premium</li>
+
+</ul>
+
+</div>
+
+<!-- PARCEIROS -->
+
+<div class="w3-padding-64 w3-content" id="parceiros">
+
+<h2 class="w3-text-caramelo">
+Parceiros
+</h2>
+
+<hr style="width:200px">
+
+<p>
+Empresas e marcas que compartilham nossa paixão
+pela música, cultura retrô e responsabilidade social.
+</p>
+
+<div class="w3-row-padding w3-margin-top">
+
+<div class="w3-half">
+
+<img src="imagens/cervejaria.png"
+alt="Parceiro  do bar: cervejaria artesanal local"
+style="width:100%"
+class="parceiro-img">
+
+</div>
+
+<div class="w3-half">
+
+<img src="imagens/ong.png"
+alt="Parceiro  do bar: ONG de proteção animal"
+style="width:100%"
+class="parceiro-img">
+
+</div>
+
+<div class="w3-half">
+
+<img src="imagens/retrosom.png"
+alt="Parceiro  do bar: Retrosom"
+style="width:100%"
+class="parceiro-img">
+
+</div>
+
+<div class="w3-half">
+
+<img src="imagens/hortifrut.png"
+alt="Parceiro  do bar: Hortifrut"
+style="width:100%"
+class="parceiro-img">
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="w3-padding-64 w3-content" id="faq">
+
+<h2 class="w3-text-caramelo">
+Perguntas Frequentes
+</h2>
+
+<hr style="width:200px">
+
+<div class="card-faq">
+
+<h3>
+O Caramelo’s Bar é Pet Friendly?
+</h3>
+
+<p>
+Sim! Somos um espaço 100% pet friendly e apoiamos
+ONGs de proteção animal da região.
+</p>
+
+</div>
+
+<div class="card-faq">
+
+<h3>
+Quais estilos musicais tocam no bar?
+</h3>
+
+<p>
+Flashbacks dos anos 70, 80, 90 e 2000,
+incluindo rock clássico, disco, pop retrô
+e pagode nostálgico.
+</p>
+
+</div>
+
+<div class="card-faq">
+
+<h3>
+Existe música ao vivo?
+</h3>
+
+<p>
+Sim! Sextas e sábados contamos com bandas e músicos locais.
+</p>
+
+</div>
+
+<div class="card-faq">
+
+<h3>
+Precisa reservar mesa?
+</h3>
+
+<p>
+Somente em eventos especiais e noites temáticas.
+</p>
+
+</div>
+
+<div class="card-faq">
+
+<h3>
+O ambiente possui conforto acústico?
+</h3>
+
+<p>
+Sim! Nosso espaço foi projetado para proporcionar música
+de qualidade sem prejudicar a conversa entre amigos.
+</p>
+
+</div>
+
+</div>
+
+<!-- CONTATO -->
+
+<div class="w3-padding-64 w3-content" id="contato">
+
+<h2 class="w3-text-caramelo">
+Contato
+</h2>
+
+<hr style="width:200px">
+
+<p>
+
+<i class="fa fa-map-marker fa-fw w3-text-caramelo"></i>
+
+Marília - SP
+
+</p>
+
+<p>
+
+<i class="fa fa-phone fa-fw w3-text-caramelo"></i>
+
+(18) 99999-9999
+
+</p>
+
+<p>
+
+<i class="fa fa-envelope fa-fw w3-text-caramelo"></i>
+
+contato@caramelosbar.com
+
+</p>
+
+<p>
+
+<i class="fa fa-instagram fa-fw w3-text-caramelo"></i>
+
+@caramelosbar
+
+</p>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="w3-center">
+
+<h3 class="w3-text-caramelo">
+Siga o Caramelo's Bar
+</h3>
+
+<div class="social-icons">
+
+<a href="https://facebook.com"
+target="_blank">
+
+<i class="fa fa-facebook-official w3-xxlarge"></i>
+
+</a>
+
+<a href="https://instagram.com"
+target="_blank">
+
+<i class="fa fa-instagram w3-xxlarge"></i>
+
+</a>
+
+<a href="https://youtube.com"
+target="_blank">
+
+<i class="fa fa-youtube-play w3-xxlarge"></i>
+
+</a>
+
+<a href="https://spotify.com"
+target="_blank">
+
+<i class="fa fa-spotify w3-xxlarge"></i>
+
+</a>
+
+</div>
+
+<p style="margin-top:20px;">
+
+🐾 Caramelo's Bar • O clássico nunca sai de moda.
+
+</p>
+
+<p class="w3-small">
+
+Desenvolvido para o projeto acadêmico de Desenvolvimento de Sistemas.
+
+</p>
+
+</footer>
+
+</div>
+
+</body>
+</html>
