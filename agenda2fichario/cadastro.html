@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Compatibilidade com telas de celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Colaborador</title>
+
+    <!-- Framework W3.CSS -->
+    <link rel="stylesheet"
+        href="https://www.w3schools.com/w3css/5/w3.css">
+</head>
+
+<body style="background-color: #F8F5EF;">
+
+    <!-- CABEÇALHO -->
+    <header
+        class="w3-container w3-center w3-padding-32"
+        style="background-color: #172033; color: #FFFFFF;">
+
+        <h1>Cadastro de Colaborador</h1>
+
+        <p>
+            Lojas Brincos e Companhia
+        </p>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main
+        class="w3-content w3-padding-32"
+        style="max-width: 700px;">
+
+        <div
+            class="w3-card-4"
+            style="background-color: #FFFFFF;">
+
+            <!-- TÍTULO DO FORMULÁRIO -->
+            <div
+                class="w3-container w3-padding-16"
+                style="background-color: #1E293B; color: #FFFFFF;">
+
+                <h2>Formulário de Cadastro</h2>
+
+                <p>
+                    Preencha seus dados abaixo.
+                </p>
+
+            </div>
+
+
+            <!-- FORMULÁRIO -->
+            <form
+                class="w3-container w3-padding-16"
+                action="processaCadastro.php"
+                method="POST">
+
+
+                <!-- NOME -->
+                <label
+                    for="nome1"
+                    style="color: #1E293B;">
+
+                    <b>Nome completo:</b>
+
+                </label>
+
+                <input
+                    class="w3-input w3-border w3-margin-bottom"
+                    type="text"
+                    id="nome1"
+                    name="nome1"
+                    required>
+
+
+                <!-- IDADE -->
+                <label
+                    for="idade2"
+                    style="color: #1E293B;">
+
+                    <b>Idade:</b>
+
+                </label>
+
+                <input
+                    class="w3-input w3-border w3-margin-bottom"
+                    type="number"
+                    id="idade2"
+                    name="idade2"
+                    min="1"
+                    required>
+
+
+                <!-- PROFISSÃO -->
+                <label
+                    for="profissao3"
+                    style="color: #1E293B;">
+
+                    <b>Profissão:</b>
+
+                </label>
+
+                <input
+                    class="w3-input w3-border w3-margin-bottom"
+                    type="text"
+                    id="profissao3"
+                    name="profissao3"
+                    required>
+
+
+                <!-- SALÁRIO -->
+                <label
+                    for="salario4"
+                    style="color: #1E293B;">
+
+                    <b>Salário pretendido:</b>
+
+                </label>
+
+                <input
+                    class="w3-input w3-border w3-margin-bottom"
+                    type="number"
+                    id="salario4"
+                    name="salario4"
+                    min="0"
+                    step="0.01"
+                    required>
+
+
+                <!-- EXPERIÊNCIA -->
+                <label
+                    for="experiencia5"
+                    style="color: #1E293B;">
+
+                    <b>Experiência anterior:</b>
+
+                </label>
+
+                <textarea
+                    class="w3-input w3-border w3-margin-bottom"
+                    id="experiencia5"
+                    name="experiencia5"
+                    rows="6"
+                    required></textarea>
+
+
+                <!-- BOTÃO -->
+                <button
+                    type="submit"
+                    class="w3-button w3-margin-top w3-margin-bottom"
+                    style="
+                        background-color: #C9A86A;
+                        color: #172033;
+                        font-weight: bold;
+                    ">
+
+                    Enviar Cadastro
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer
+        class="w3-container w3-center w3-padding-16"
+        style="background-color: #172033; color: #FFFFFF;">
+
+        <p>
+            Lojas Brincos e Companhia
+        </p>
+
+        <p>
+            Sistema de Cadastro de Colaboradores
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
