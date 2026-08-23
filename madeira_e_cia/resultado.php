@@ -121,7 +121,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <a
-            href="index.php"
+            href="index.html"
             class="botao-voltar"
         >
             Nova compra
@@ -153,7 +153,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Também utilizei a função number_format() para apresentar os valores
     com duas casas decimais e no padrão brasileiro de moeda.
 
-    O formulário foi desenvolvido separadamente no arquivo index.php,
+    O formulário foi desenvolvido separadamente no arquivo index.html,
     enquanto o processamento dos dados foi colocado no arquivo
     resultado.php. Dessa forma, cada arquivo possui uma função
     específica, deixando o projeto mais organizado.
