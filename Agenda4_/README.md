@@ -1,7 +1,13 @@
 # ⚙️ Controle de Manutenção Industrial em PHP
 
+<<<<<<< HEAD
 > **Atividade Prática:** Agenda 4 - Programação Web I   
 > **Tecnologias:** PHP, HTML5  
+=======
+> **Atividade Prática:** Agenda 4 - Programação Web I  
+> **Estudante:** Wagner  
+> **Tecnologias:** PHP, HTML5 
+>>>>>>> ae3cc894701fe382646eee25d3f5892659cc7181
 
 Este repositório contém uma aplicação funcional simplificada desenvolvida para demonstrar o uso prático de **funções (customizadas e nativas)** e **estruturas de repetição (`foreach` e `for`)** na linguagem PHP.
 
