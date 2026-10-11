@@ -1,0 +1,165 @@
+```css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Configuração geral */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F7F5F0;
+    color: #2B2B2B;
+}
+
+/* Container principal */
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(31, 61, 53, 0.15);
+}
+
+/* Título */
+
+h1 {
+    margin-bottom: 8px;
+    text-align: center;
+    color: #1F3D35;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.subtitulo {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+}
+
+/* Formulário */
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    color: #1F3D35;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #D8C3A5;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    color: #2B2B2B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Campos selecionados */
+
+input:focus,
+select:focus {
+    border-color: #2F5D50;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(47, 93, 80, 0.12);
+}
+
+/* Botão */
+
+button {
+    width: 100%;
+    margin-top: 28px;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2F5D50;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1F3D35;
+    transform: translateY(-1px);
+}
+
+/* Área dos descontos */
+
+.descontos {
+    margin-top: 30px;
+    padding: 20px;
+    border-left: 5px solid #2F5D50;
+    border-radius: 8px;
+    background-color: #D8C3A5;
+}
+
+.descontos h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #1F3D35;
+    font-size: 17px;
+}
+
+.descontos p {
+    margin: 9px 0;
+    color: #2B2B2B;
+    font-size: 14px;
+}
+
+/* Resultado */
+
+.resultado {
+    margin-top: 25px;
+    padding: 20px;
+    border-left: 5px solid #2F5D50;
+    border-radius: 8px;
+    background-color: #E8F0ED;
+    color: #2B2B2B;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.resultado strong {
+    color: #1F3D35;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        margin: 25px auto;
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .subtitulo {
+        font-size: 13px;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 14px;
+    }
+}
+```
