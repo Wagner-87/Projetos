@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiMeuCombustivel.MainPage">
+
+	<ScrollView>
+		<VerticalStackLayout Padding="30,20" Spacing="15">
+
+			<!-- Imagem do topo -->
+			<Image Source="dotnet_bot.png"
+                   HeightRequest="150"
+                   Aspect="AspectFit"
+                   SemanticProperties.Description="Ilustração do aplicativo" />
+
+			<Label Text="Cálculo de Combustível"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+			<!-- Novos campos: Marca e Modelo -->
+			<Label Text="Marca do Veículo:"
+                   FontAttributes="Bold" />
+			<Entry x:Name="txt_marca"
+                   Placeholder="Ex: Fiat, Chevrolet, Volkswagen"
+				   ReturnType="Next"
+				   Completed="txt_marca_Completed"/>
+
+			<Label Text="Modelo do Veículo:"
+                   FontAttributes="Bold" />
+			<Entry x:Name="txt_modelo"
+                   Placeholder="Ex: Uno, Onix, Gol"
+				   ReturnType="Next" 
+				   Completed="txt_modelo_Completed"/>
+
+			<BoxView HeightRequest="1" Color="Gray" Margin="0,10" />
+
+			<!-- Campos de Preço -->
+			<Label Text="Preço do Etanol:"
+                   FontAttributes="Bold" />
+			<Entry x:Name="txt_etanol"
+                   Placeholder="R$"
+                   Keyboard="Numeric" 
+				   ReturnType="Next"
+				   Completed="txt_etanol_Completed"/>
+
+			<Label Text="Preço da Gasolina:"
+                   FontAttributes="Bold" />
+			<Entry x:Name="txt_gasolina"
+                   Placeholder="R$"
+                   Keyboard="Numeric"
+				   ReturnType="Done"/>
+
+			<!-- Botão de Ação -->
+			<Button Text="Qual compensa mais?"
+                    Clicked="Button_Clicked"
+                    Margin="0,15,0,0" />
+
+		</VerticalStackLayout>
+	</ScrollView>
+
+</ContentPage>
