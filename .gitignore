@@ -1,4 +1,5 @@
-.vs/ 
-bin/ 
-obj/ 
-*.user 
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/Agenda10/atvdcombustivel/.vs

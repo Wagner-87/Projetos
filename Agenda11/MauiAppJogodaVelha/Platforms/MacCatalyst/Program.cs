@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace MauiMeuCombustivel
+namespace MauiAppJogodaVelha
 {
     public class Program
     {

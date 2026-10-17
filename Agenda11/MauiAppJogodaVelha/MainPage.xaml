@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppJogodaVelha.MainPage">
+
+    <!-- Fundo com Degradê em Tons de Verde -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#0F2027" Offset="0.0" />
+            <GradientStop Color="#134E5E" Offset="0.5" />
+            <GradientStop Color="#71B280" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <!-- Estilos globais para os botões do tabuleiro -->
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#112211" />
+            <Setter Property="CornerRadius" Value="15" />
+            <Setter Property="TextColor" Value="#71B280" />
+            <Setter Property="FontSize" Value="80" />
+            <Setter Property="BorderWidth" Value="1" />
+            <Setter Property="BorderColor" Value="#71B280" />
+        </Style>
+    </ContentPage.Resources>
+
+    <!-- Grid Principal (6 Linhas: Título + 4 Linhas do Jogo + Botão de Reiniciar) -->
+    <Grid RowDefinitions="*, *, *, *, *, *"
+          ColumnDefinitions="*, *, *"
+          ColumnSpacing="10" RowSpacing="10" Margin="15">
+
+        <!-- Título do Jogo -->
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+               Text="Jogo da Velha"
+               TextColor="White"
+               FontSize="32"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+
+        <!-- Linha 1 do Tabuleiro -->
+        <Button x:Name="btn10" Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked" />
+        <Button x:Name="btn11" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked" />
+        <Button x:Name="btn12" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked" />
+
+        <!-- Linha 2 do Tabuleiro -->
+        <Button x:Name="btn20" Grid.Row="2" Grid.Column="0" Clicked="Button_Clicked" />
+        <Button x:Name="btn21" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked" />
+        <Button x:Name="btn22" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked" />
+
+        <!-- Linha 3 do Tabuleiro -->
+        <Button x:Name="btn30" Grid.Row="3" Grid.Column="0" Clicked="Button_Clicked" />
+        <Button x:Name="btn31" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked" />
+        <Button x:Name="btn32" Grid.Row="3" Grid.Column="2" Clicked="Button_Clicked" />
+
+        <!-- Botão de Reinício Manual -->
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3"
+                Text="Reiniciar Jogo"
+                TextColor="White"
+                FontSize="18"
+                BackgroundColor="#1E5631"
+                BorderColor="White"
+                CornerRadius="10"
+                Clicked="BtnReiniciar_Clicked" />
+
+    </Grid>
+
+</ContentPage>
