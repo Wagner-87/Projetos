@@ -1,0 +1,30 @@
+﻿## .NET / Visual Studio / .NET MAUI Ignore File ##
+
+# Visual Studio user specific files
+*.suo
+*.user
+*.userprefs
+*.lock.json
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+[Tt]emp/
+
+# .vs folder (Important!)
+.vs/
+
+# Mobile specific build outputs
+appstore/
+*.apk
+*.aab
+*.ipa
+
+# OS generated files
+.DS_Store
+Thumbs.db

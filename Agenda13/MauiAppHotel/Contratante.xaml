@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Contratante"
+             Title="Resumo da Reserva"
+             BackgroundColor="#F9F8F6">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="25">
+
+            <!-- Cabeçalho Elegante -->
+            <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+                <Label Text="PARADISE RESORT" 
+                       FontSize="24" 
+                       FontAttributes="Bold" 
+                       TextColor="#1E3D59" 
+                       HorizontalOptions="Center" />
+                <Label Text="Detalhes da sua estadia" 
+                       FontSize="14" 
+                       TextColor="#C5A880" 
+                       HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Card de Resumo -->
+            <Frame BackgroundColor="White" 
+                   BorderColor="#E0DCD0" 
+                   CornerRadius="12" 
+                   Padding="20" 
+                   HasShadow="True">
+
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Resumo do Pedido" 
+                           FontSize="16" 
+                           FontAttributes="Bold" 
+                           TextColor="#1E3D59" />
+
+                    <BoxView HeightRequest="1" BackgroundColor="#E0DCD0" Margin="0,5" />
+
+                    <!-- Informações da Reserva -->
+                    <VerticalStackLayout Spacing="10">
+                        <Label x:Name="lblQuarto" FontSize="15" TextColor="#2C3E50" />
+                        <Label x:Name="lblDatas" FontSize="15" TextColor="#2C3E50" />
+                        <Label x:Name="lblHospedes" FontSize="15" TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#E0DCD0" Margin="0,5" />
+
+                    <!-- Valor Total em Destaque -->
+                    <VerticalStackLayout Spacing="5" HorizontalOptions="Center" Margin="0,10,0,0">
+                        <Label Text="VALOR TOTAL DA ESTADIA" FontSize="12" FontAttributes="Bold" TextColor="#C5A880" HorizontalOptions="Center" />
+                        <Label x:Name="lblValorTotal" FontSize="26" FontAttributes="Bold" TextColor="#1E3D59" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Botão de Voltar -->
+            <Button Text="Voltar / Alterar Dados" 
+                    Clicked="Button_Clicked" 
+                    BackgroundColor="#1E3D59" 
+                    TextColor="White" 
+                    CornerRadius="8" 
+                    FontAttributes="Bold" 
+                    HeightRequest="50" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
