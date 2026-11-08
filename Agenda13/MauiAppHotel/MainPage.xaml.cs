@@ -39,6 +39,9 @@ namespace MauiAppHotel
                 int adultos = (int)stp_adultos.Value;
                 int criancas = (int)stp_criancas.Value;
 
+                // Captura o cupom digitado pelo utilizador
+                string cupom = txt_cupom.Text;
+
                 // Validação extra para impedir check-in em data passada
                 if (checkIn < DateTime.Today)
                 {
@@ -52,7 +55,7 @@ namespace MauiAppHotel
                     return;
                 }
 
-                await Navigation.PushAsync(new Contratante(quartoSelecionado, checkIn, checkOut, adultos, criancas));
+                await Navigation.PushAsync(new Contratante(quartoSelecionado, checkIn, checkOut, adultos, criancas, cupom));
             }
             catch (Exception ex)
             {
